@@ -1,0 +1,86 @@
+* {
+    color: white;
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(20, 20, 20, 1);
+}
+
+#App {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#Board {
+    display: flex;
+    flex-direction: column;
+}
+
+#ScoreBoard {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 2vmin;
+}
+
+.row {
+    display: flex;
+}
+
+.Box {
+    width: 20vmin;
+    height: 20vmin;
+    border-collapse: collapse;
+    font-weight: 900;
+    font-size: 15vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red, #Red h1 {
+    color: hsl(0, 100%, 70%);
+}
+
+.blue, #Blue h1 {
+    color: hsl(255, 100%, 70%);
+}
+
+.PlayerBoard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.PlayerBoard h1 {
+    margin: 0;
+}
+
+.hiddenOnPC {
+    display: none !important;
+}
+
+@media screen and (max-width: 800px) {
+    #ScoreBoard {
+        font-size: 3.5vmin;
+    }
+
+    .Box {
+        width: 30vmin;
+        height: 30vmin;
+    }
+
+    .hiddenOnPC {
+        display: flex !important;
+        visibility: hidden !important;
+    }
+}
