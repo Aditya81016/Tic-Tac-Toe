@@ -46,7 +46,7 @@ body {
     align-items: center;
 }
 
-.red, #Red
+.red, #Red h1 {
     color: rgb(0, 150, 150);
 }
 
