@@ -46,12 +46,12 @@ body {
     align-items: center;
 }
 
-.red, #Red h1 {
-    color: hsl(0, 100%, 70%);
+.red, #Red
+    color: rgb(0, 150, 150);
 }
 
 .blue, #Blue h1 {
-    color: hsl(255, 100%, 70%);
+    color: rgb(200, 150, 100);
 }
 
 .PlayerBoard {
